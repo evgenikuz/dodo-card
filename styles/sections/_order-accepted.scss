@@ -1,0 +1,101 @@
+.order-accepted {
+    height: 340px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    &__order-number {
+        color: #73798C;
+        font-weight: 400;
+    }
+    &__order-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__order-status {
+        font-size: 36px;
+        margin: 5px 0 31px;
+    }
+    &__delivery-time {
+        font-size: 36px;
+    }
+    &__line {
+        border-radius: 2px;
+        background: #E2E2E9;
+        border: 2px solid #E2E2E9;
+    }
+    &__delivery-info {
+        display: flex;
+        margin: 9px 0 70px;
+        gap: 5px;
+    }
+    &__delivery-address {
+        font-weight: 400;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__cancel-btn {
+        border: 1px solid #FFF0E6;
+        background-color: #FFF0E6;
+        color: #D15700;
+        padding: 13px 20px;
+        border-radius: 1000px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #fff;
+            color:  #F96900;
+            border: 1px solid #D15700;
+        }
+    }
+    &__to-menu-btn {
+        border: 1px solid #F96900;
+        background-color: #F96900;
+        color: #fff;
+        padding: 13px 27px;
+        border-radius: 1000px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #fff;
+            color:  #F96900;
+        }
+
+    }
+}
+
+@media (max-width: 445px) {
+    .order-accepted {
+        height: 377px;
+        padding: 16px;
+        &__order-number {
+            font-size: 12px;
+        }
+        &__order-status {
+            font-size: 24px;
+            margin: 4px 0 12px;
+        }
+        &__delivery-time {
+            display: none;
+        }
+        &__line {
+            display: none;
+        }
+        &__delivery-info {
+            display: flex;
+            flex-direction: column;
+            background-color: #F3F3F7;
+            border-radius: 10px;
+            padding: 18px 20px;
+            gap: 4px;
+            margin-top: 12px;
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+        }
+    }
+}
